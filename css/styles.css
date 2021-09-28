@@ -478,7 +478,9 @@ img{
 }
 
 @media screen and (min-width: 724px) {
-    .home_container {
+    .home_container,
+    .share_container,
+    .send_container {
         grid-template-columns: repeat(2,1fr);
         align-items: center;
         padding: 2rem 0 0;
@@ -496,13 +498,6 @@ img{
         font-size: .90rem;
     }
     
-
-    .share_container {
-        grid-template-columns: repeat(2,1fr);
-        align-items: center;
-        padding: 2rem 0 0;
-    }
-
     .share_img {
         order: -1;
     }
@@ -517,7 +512,111 @@ img{
     }
 
     .section-title-center,
-    .share_data{
+    .share_data,
+    .send_description{
         text-align: initial;
     }
+
+    .section {
+        padding-top: 1rem;
+    }
+
+    .home_img,
+    .share_img,
+    .send_img {
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    body {
+        margin: 0;
+    }
+
+    .section {
+        padding-top: 7rem;
+    }
+
+    .nav {
+        height:calc(var(--header-height) + 1.5rem);
+    }
+
+    .nav_list {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav_item {
+        margin-left: var(--mb-5);
+        margin-bottom: 0;
+    }
+
+    .nav_toggle {
+        display: none;
+    }
+
+    .home_container {
+        padding: 7rem 2rem 0;
+    }
+
+    .share_container {
+        padding: 0 2rem;
+    }
+
+    .accessory_container {
+        grid-template-columns: repeat(3,224px);
+        justify-content: center;
+    }
+
+    .accessory_content {
+        padding: .5rem 1.5rem 1.5rem;
+    }
+
+    .accessory_img {
+        width: 120px;
+        margin-bottom: var(--mb-1);
+    }
+
+    .accessory_title,
+    .accessory_category {
+        text-align: initial;
+    }
+
+    .accessory_button {
+        padding: .75rem
+    }
+
+    .section {
+        padding-top: 1rem;
+    }
+
+    .send {
+        background: none;
+    }
+
+    .send_container {
+        background-color: var(--first-color-send);
+        padding: 2rem;
+        border-radius: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 968px) {
+    .bd-container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .home_img,
+    .share_img,
+    .send_img {
+        width: 469px;
+    } 
+
+    .home_container,
+    .share_container,
+    .send_container {
+        column-gap: 5;
+    } 
 }
