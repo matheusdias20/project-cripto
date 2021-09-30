@@ -335,6 +335,45 @@ img{
     margin-bottom: var(--mb-1);
 }
 
+.timeline_data {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+}
+
+.timeline_title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-semi-bold);
+}
+
+.timeline_subtitle {
+    display: inline-block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-1);
+    text-align: justify;
+}
+
+.timeline_calendar {
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+.timeline_rounder {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: var(--first-color);
+    border-radius: 50%;
+}
+
+.timeline_line {
+    display: block;
+    width: 2px;
+    height: 100%;
+    background-color: var(--first-color);
+    transform: translate(6px, -7px);
+}
+
 
 .cripto_container{
     grid-template-columns: repeat(2,1fr);
@@ -536,6 +575,20 @@ img{
 }
 
 
+@media screen and (max-width: 350px) {
+    .timeline_data {
+        gap: .5rem
+    }
+}
+
+@media screen and (min-width: 568px) {
+    .timeline_sections {
+        display: grid;
+        grid-template-columns: .7fr;
+        justify-content: center;
+    }
+}
+
 @media screen and (min-width: 768px) {
     body {
         margin: 0;
@@ -604,6 +657,10 @@ img{
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
     }
+
+    /* .timeline_sections {
+        grid-template-columns: .5fr;
+    } */
 
     .section {
         padding-top: 1rem;

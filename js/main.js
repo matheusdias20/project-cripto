@@ -108,6 +108,7 @@ const sr = ScrollReveal({
 
 sr.reveal(`.home_data, .home_img, 
            .benefits_data,
+           .timeline_data,
            .cripto_content,
            .footer_content`, {
     origin: 'top',
@@ -121,3 +122,5 @@ sr.reveal(`.about_img, .newsletter_content`, {
 sr.reveal(`.about_data, .newsletter_img`, {
     origin: 'right'
 })
+
+
