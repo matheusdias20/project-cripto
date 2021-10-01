@@ -9,7 +9,7 @@
 
 ### Site 💻
 
-- [Mercado Criptomoeda](mercado-criptomoeda.netlify.app)
+- [Mercado Criptomoeda](https://mercado-criptomoeda.netlify.app/)
 
 ## Linguagens: 🚀
 - HTML
